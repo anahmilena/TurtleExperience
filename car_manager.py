@@ -13,7 +13,8 @@ class CarManager():
         self.interval = 6
 
     def create_a_car(self):
-        new_car = Turtle(shape="square")
+        new_car = Turtle(shape="triangle")
+        new_car.setheading(180)
         new_car.penup()
         new_car.color(random.choice(COLORS))
         new_car.goto(280, random.randint(-225, 250))
